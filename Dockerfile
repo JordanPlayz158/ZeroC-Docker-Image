@@ -11,7 +11,6 @@ RUN cd ice/cpp && make -j
 
 # make install didn't seem to work so manually copying
 RUN cd ice/cpp/bin && cp * /usr/bin/
-RUN cd ice/cpp/include && cp -r * /usr/local/include/
 
 # Cleanup Source
 RUN rm -R ice
